@@ -6,7 +6,7 @@ die() {
 }
 
 case $OS in
-	debian|Gentoo)
+	gentoo|Gentoo)
 		;;
 	debian|Debian)
 		;;

@@ -45,6 +45,7 @@ RUN apt-get install -y libgtk-3-0 libgtk-3-bin libgtk-3-dev libgtk-3-common \
 	libglib2.0-data libglib2.0-dev \
 	libnotify-bin libnotify-cil-dev libnotify-dev \
 	intltool gettext pkg-config automake autoconf \
+	libasound2 libasound2-data libasound2-dev \
 	clang
 EOF
 		docker build -t pnmixer-debian-test . \
