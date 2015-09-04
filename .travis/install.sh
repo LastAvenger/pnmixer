@@ -6,7 +6,9 @@ die() {
 }
 
 case $OS in
-	Gentoo)
+	debian|Gentoo)
+		;;
+	debian|Debian)
 		;;
 	*)
 		die "unsupported OS $OS!"
