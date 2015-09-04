@@ -16,7 +16,7 @@ case $OS in
 	debian|Debian)
 		docker run -ti \
 			-v "`pwd`":/pnmixer \
-			pnmixer-debian-test \
+			hasufell/debian-pnmixer-test:latest \
 			sh -c "cd /pnmixer && CC=$CC ./autogen.sh --enable-debug $BUILD_FLAGS && make" \
 			|| die "failed to build image"
 		;;
